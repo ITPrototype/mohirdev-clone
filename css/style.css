@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+.logo {
+  width: 150px;
+  padding: 0 0 15px 15px;
+}
+header {
+  background-color: #121a1d;
+  height: 100vh;
+}
+.header-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-top_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+.menu-list {
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 480px;
+  text-align: center;
+}
+.menu-list_item {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+  width: 100px !important;
+}
+.menu-list_item a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 10px;
+  position: relative;
+  font-size: 14px;
+}
+.menu-list_item a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menu-list_item a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.header-top_right {
+  padding: 10px;
+}
+.user {
+  background-color: #0665d8;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  transition: 1s ease-out;
+}
+.user:hover {
+  border: 1px solid white;
+}
+.header-centered_title {
+  color: white;
+  width: 500px;
+  font-size: 70px;
+  font-weight: 500;
+}
+.search {
+  border-bottom: 2px solid white;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px 0;
+}
+.search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 350px;
+}
+.search i {
+  color: white;
+  cursor: pointer;
+}
+.search input::placeholder {
+  color: white;
+}
+.header-centered_content {
+  width: 1000px;
+  margin: 70px auto;
+}
+.header-centered_content-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-centered_content-right {
+  align-items: flex-start;
+}
+.praktikum {
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-line {
+  width: 100px;
+  border-bottom: 4px solid #0665d8;
+}
+.under-line {
+  width: 700px;
+  border-bottom: 4px solid rgba(128, 128, 128, 0.408);
+}
+.praktikum-header {
+  margin: 30px 0;
+}
+.praktikum-cards {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1100px;
+}
+.praktikum-cards img {
+  width: 350px;
+  margin-top: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.5s;
+}
+.praktikum-cards img:hover {
+  box-shadow: none;
+}
+.payment img {
+  margin: 100px auto;
+  width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.payment img:hover {
+  box-shadow: none;
+}
+.blue {
+  color: #0665d8;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.html-css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.html-css_title {
+  font-size: 30px;
+  margin-top: 40px;
+}
+.blue:hover {
+  color: #075ac1;
+}
+.bold {
+  font-weight: bold;
+}
+.html-css_card {
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.241);
+  height: 445px;
+  width: 290px;
+  margin-top: 20px;
+}
+.card-title {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+.card-header img {
+  width: 290px;
+}
+.card-body {
+  padding: 30px 15px;
+  height: 220px;
+}
+.html-css_cards{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1400px;
+  flex-wrap: wrap;
+}
+.stars i{
+  color: #ed9700;
+}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 15px;
+  border-top: 1px solid grey;
+}
+.card-next {
+  background: transparent;
+  padding: 9px 15px;
+  transition: 0.5s;
+  color: #fb4c0d;
+  border: none;
+}
+.card-next:hover {
+  background-color: #fb4c0d;
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 20px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .header-centered_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+  }
+  .header-centered_content-main {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+  }
+  .header-centered_content-main img {
+    width: 200px;
+  }
+  .header-centered_title {
+    font-size: 50px;
+  }
+  .search {
+    width: 600px;
+    margin-top: 80px;
+  }
+  .praktikum-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .praktikum-cards img {
+    width: 550px;
+  }
+  .html-css_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
