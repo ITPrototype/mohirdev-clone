@@ -210,6 +210,7 @@ header {
   font-size: 20px;
   letter-spacing: 0.5px;
   font-weight: 700;
+  word-wrap: break-word;
 }
 .card-header img {
   width: 290px;
@@ -248,7 +249,29 @@ header {
   background-color: #fb4c0d;
   color: white;
 }
-
+.big-card-body{
+  padding: 10px;
+}
+.big-card{
+  width: 500px;
+  border: 1px solid rgba(128, 128, 128, 0.263);
+  overflow: hidden;
+}
+.author{
+  margin-top: 10px;
+}
+.sum{
+  font-weight: bold;
+  font-size: 28px;
+}
+.big-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+}
 @media screen and (max-width: 950px) {
   html,
   body {
@@ -288,11 +311,33 @@ header {
     align-items: center;
   }
   .praktikum-cards img {
-    width: 550px;
+    width: 300px;
   }
   .html-css_cards{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .big-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .header-centered_content-right{
+    display: block;
+    width: 300px;
+    margin-right: 270px;
+  }
+  .search{
+    width: 300px;
+  }
+  .payment img{
+    width: 350px;
+  }
+  .html-css_title{
+    text-align: center;
+  }
+  .big-card{
+    width: 300px;
+    margin-top: 10px;
   }
 }
